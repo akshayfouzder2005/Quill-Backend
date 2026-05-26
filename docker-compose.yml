@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: quill_postgres
+    environment:
+      POSTGRES_USER: quill
+      POSTGRES_PASSWORD: quill
+      POSTGRES_DB: quill_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - quill_pg_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: quill_redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - quill_redis_data:/data
+
+volumes:
+  quill_pg_data:
+  quill_redis_data:

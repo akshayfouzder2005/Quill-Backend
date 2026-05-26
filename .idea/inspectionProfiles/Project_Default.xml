@@ -1,0 +1,34 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="streamlit" />
+          <option value="pandas" />
+          <option value="numpy" />
+          <option value="scikit-learn" />
+          <option value="plotly" />
+          <option value="folium" />
+          <option value="streamlit-folium" />
+          <option value="seaborn" />
+          <option value="matplotlib" />
+          <option value="joblib" />
+          <option value="Pillow" />
+          <option value="requests" />
+          <option value="sqlalchemy" />
+          <option value="psycopg2-binary" />
+          <option value="boto3" />
+          <option value="streamlit-authenticator" />
+          <option value="streamlit-option-menu" />
+          <option value="streamlit-aggrid" />
+          <option value="streamlit-lottie" />
+          <option value="streamlit-shadcn-ui" />
+          <option value="altair" />
+          <option value="hydralit-components" />
+          <option value="extra-streamlit-components" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
